@@ -21,7 +21,7 @@ export const LanguageProvider = ({ children }) => {
         } else {
             setLanguage('it');
         }
-    }, []);
+    }, [router.pathname]);
 
 
     function handleChange(url) {

@@ -4,35 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Fixed general issues">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studio/schemaTypes/author.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studio/schemaTypes/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LanguageSwitcher.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NavBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/context/LanguageContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/en/[slug].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/en/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/it/[slug].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemaTypes/blockContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemaTypes/blockContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemaTypes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemaTypes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemaTypes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemaTypes/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js">
+      <change afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/context/LanguageContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/context/LanguageContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +100,14 @@
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\public\img" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\studio" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\public" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\pages\it" />
-      <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.studio">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -167,7 +151,7 @@
       <workItem from="1737262748231" duration="16223000" />
       <workItem from="1737793190241" duration="367000" />
       <workItem from="1737793572085" duration="9556000" />
-      <workItem from="1737803300694" duration="307000" />
+      <workItem from="1737803300694" duration="8726000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -225,7 +209,31 @@
       <option name="project" value="LOCAL" />
       <updated>1737803172379</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed general issues">
+      <option name="closed" value="true" />
+      <created>1737803694436</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737803694436</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed general issues">
+      <option name="closed" value="true" />
+      <created>1737803726479</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737803726479</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js">
+      <option name="closed" value="true" />
+      <created>1737803870900</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737803870900</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +256,7 @@
     <MESSAGE value="Sanity post setup" />
     <MESSAGE value="Multi language homepage routing done" />
     <MESSAGE value="Fixed general issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed general issues" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js" />
   </component>
 </project>

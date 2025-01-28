@@ -2,20 +2,149 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+/* Small screens */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: .9rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 0.9rem;
+        max-width: 450px;
+    }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Small screens */
+@media (min-width: 641px) and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 0.9rem;
+        max-width: 450px;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 1rem;
+        max-width: 500px;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1025px) and (max-width: 1536px) {
+    h1 {
+        font-size: 6rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 1.125rem;
+        max-width: 600px;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1536px) {
+    h1 {
+        font-size: 8rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 1.25rem;
+        max-width: 650px;
+    }
 }

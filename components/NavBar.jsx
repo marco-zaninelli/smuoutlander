@@ -7,21 +7,21 @@ export default function NavBar ({languageLink}) {
     const {language, handleChange} = useLanguage();
 
     return (
-        <div className="max-w-screen-2xl mx-auto flex flex-row border-b items-center border-black space-between">
+        <div className="w-full mx-auto flex flex-row justify-between border-b border-black items-center py-2 mt-2">
             {/* Blog Title */}
             <h3>IL BLOG DI SMU</h3>
 
             {/* Navigation Items */}
-            <div className="flex flex-row">
+            <div className="flex flex-row gap-x-4 items-center">
                 <Link href="#">
-                    <Image src={Instagram} alt="Instagram" width={18} height={18} />
+                    <Image src={Instagram} alt="Instagram" width={30} height={30} className={"w-4 md:w-5 lg:w-6 xl:w-7"} />
                 </Link>
                 <div>
                     <button
                         onClick={() => handleChange(languageLink)}
                         className="hover:underline focus:outline-none"
                     >
-                        {language === "it" ? "ITA" : "ENG"}
+                        <h4 className={'my-0'}>{language === "it" ? "ENG" : "ITA"}</h4>
                     </button>
                 </div>
             </div>
