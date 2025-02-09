@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js">
-      <change afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Lastest post component created">
+      <change afterPath="$PROJECT_DIR$/components/Post.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/imageBuilder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sanityClient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/context/LanguageContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/context/LanguageContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LastPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/schemaTypes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemaTypes/post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +149,7 @@
       <workItem from="1737262748231" duration="16223000" />
       <workItem from="1737793190241" duration="367000" />
       <workItem from="1737793572085" duration="9556000" />
-      <workItem from="1737803300694" duration="8726000" />
+      <workItem from="1737803300694" duration="16721000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -233,7 +231,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737803870900</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Lastest post component created">
+      <option name="closed" value="true" />
+      <created>1738054515940</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738054515940</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Lastest post component created">
+      <option name="closed" value="true" />
+      <created>1738054526617</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738054526617</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +271,7 @@
     <MESSAGE value="Multi language homepage routing done" />
     <MESSAGE value="Fixed general issues" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js" />
+    <MESSAGE value="Lastest post component created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lastest post component created" />
   </component>
 </project>
