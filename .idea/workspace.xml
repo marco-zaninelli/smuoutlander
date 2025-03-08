@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Lastest post component created">
-      <change afterPath="$PROJECT_DIR$/components/Post.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/imageBuilder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sanityClient.js" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Corrected sanity import problems">
+      <change afterPath="$PROJECT_DIR$/components/ImageGrid.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/LastPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/en/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/it/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/studio/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studio/schemaTypes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemaTypes/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +103,14 @@
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\studio\schemaTypes" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\public\img" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\studio" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\public" />
-      <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\pages\it" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.studio">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -149,7 +154,9 @@
       <workItem from="1737262748231" duration="16223000" />
       <workItem from="1737793190241" duration="367000" />
       <workItem from="1737793572085" duration="9556000" />
-      <workItem from="1737803300694" duration="16721000" />
+      <workItem from="1737803300694" duration="21814000" />
+      <workItem from="1739863297867" duration="11104000" />
+      <workItem from="1741333657185" duration="14394000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -247,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738054526617</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fetching data from sanity studio">
+      <option name="closed" value="true" />
+      <created>1739071403264</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739071403264</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +287,8 @@
     <MESSAGE value="Fixed general issues" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/workspace.xml&#10;#&#9;components/NavBar.jsx&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;pages/_app.js" />
     <MESSAGE value="Lastest post component created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lastest post component created" />
+    <MESSAGE value="Fetching data from sanity studio" />
+    <MESSAGE value="Corrected sanity import problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected sanity import problems" />
   </component>
 </project>

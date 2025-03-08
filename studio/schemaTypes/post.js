@@ -1,4 +1,4 @@
-import {defineField, defineType} from "sanity";
+import { defineField, defineType } from "sanity";
 
 export default defineType({
     name: "post",
@@ -15,13 +15,13 @@ export default defineType({
                     name: "it",
                     title: "Title ITA",
                     type: "string",
-                    validation: (Rule) => Rule.required().max(150).warning("Title should not exceed 150 characters.").required
+                    validation: (Rule) => Rule.required().max(150).warning("Title should not exceed 150 characters.")
                 }),
                 defineField({
                     name: "en",
                     title: "Title ENG",
                     type: "string",
-                    validation: (Rule) => Rule.required().max(150).warning("Title should not exceed 150 characters.").required
+                    validation: (Rule) => Rule.required().max(150).warning("Title should not exceed 150 characters.")
                 })
             ]
         },
@@ -34,7 +34,7 @@ export default defineType({
                     name: "it",
                     title: "Slug ITA",
                     type: "slug",
-                    validation: (Rule) => Rule.required,
+                    validation: (Rule) => Rule.required(),
                     options: {
                         source: "title.it",
                         maxLength: 96
@@ -44,7 +44,7 @@ export default defineType({
                     name: "en",
                     title: "Slug ENG",
                     type: "slug",
-                    validation: (Rule) => Rule.required,
+                    validation: (Rule) => Rule.required(),
                     options: {
                         source: "title.en",
                         maxLength: 96
@@ -61,13 +61,13 @@ export default defineType({
                     name: "it",
                     title: "Description ITA",
                     type: "text",
-                    validation: (Rule) => Rule.max(300).warning("Description should not exceed 300 characters.").required
+                    validation: (Rule) => Rule.required().max(300).warning("Description should not exceed 300 characters.")
                 }),
                 defineField({
                     name: "en",
                     title: "Description ENG",
                     type: "text",
-                    validation: (Rule) => Rule.max(300).warning("Description should not exceed 300 characters.").required
+                    validation: (Rule) => Rule.required().max(300).warning("Description should not exceed 300 characters.")
                 })
             ]
         },
@@ -76,7 +76,7 @@ export default defineType({
             name: "mainImage",
             title: "Main Image",
             type: "image",
-            validation: (Rule) => Rule.required,
+            validation: (Rule) => Rule.required(),
             options: {
                 hotspot: true
             }
@@ -86,7 +86,7 @@ export default defineType({
             name: "publishedAt",
             title: "Published at",
             type: "date",
-            validation: (Rule) => Rule.required
+            validation: (Rule) => Rule.required()
         }),
         // Location
         {
@@ -98,13 +98,13 @@ export default defineType({
                     name: "it",
                     title: "Posizione ITA",
                     type: "text",
-                    validation: (Rule) => Rule.required
+                    validation: (Rule) => Rule.required()
                 }),
                 defineField({
                     name: "en",
                     title: "Location ENG",
                     type: "text",
-                    validation: (Rule) => Rule.required
+                    validation: (Rule) => Rule.required()
                 })
             ]
         },
@@ -118,13 +118,13 @@ export default defineType({
                     name: "it",
                     title: "Body ITA",
                     type: "blockContent",
-                    validation: (Rule) => Rule.required
+                    validation: (Rule) => Rule.required()
                 }),
                 defineField({
                     name: "en",
                     title: "Body ENG",
                     type: "blockContent",
-                    validation: (Rule) => Rule.required
+                    validation: (Rule) => Rule.required()
                 })
             ]
         },
@@ -138,13 +138,13 @@ export default defineType({
                     name: "it",
                     title: "Quote ITA",
                     type: "text",
-                    validation: (Rule) => Rule.max(200).warning("Quote should not exceed 200 characters.").required
+                    validation: (Rule) => Rule.required().max(200).warning("Quote should not exceed 200 characters.")
                 }),
                 defineField({
                     name: "en",
                     title: "Quote ENG",
                     type: "text",
-                    validation: (Rule) => Rule.max(200).warning("Quote should not exceed 200 characters.").required
+                    validation: (Rule) => Rule.required().max(200).warning("Quote should not exceed 200 characters.")
                 })
             ]
         },
@@ -172,8 +172,8 @@ export default defineType({
             title: "title.it",
             media: "mainImage"
         },
-        prepare (selection) {
-            const {title, media} = selection;
+        prepare(selection) {
+            const { title, media } = selection;
             return {
                 title,
                 media,
