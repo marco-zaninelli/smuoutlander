@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Corrected sanity import problems">
-      <change afterPath="$PROJECT_DIR$/components/ImageGrid.jsx" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Finished post page desktop version">
+      <change afterPath="$PROJECT_DIR$/components/PostComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/fetchPostData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Stefano-Brucato.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/LastPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/context/LanguageContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/context/LanguageContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/en/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/it/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/studio/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemaTypes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemaTypes/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,14 +99,14 @@
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\studio\schemaTypes" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\public\img" />
+      <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\studio\schemaTypes" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\studio" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander" />
       <recent name="C:\Users\GAMiNG-LAPTOP\WebstormProjects\smuoutlander\public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.studio">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -156,7 +152,9 @@
       <workItem from="1737793572085" duration="9556000" />
       <workItem from="1737803300694" duration="21814000" />
       <workItem from="1739863297867" duration="11104000" />
-      <workItem from="1741333657185" duration="14394000" />
+      <workItem from="1741333657185" duration="19282000" />
+      <workItem from="1742202220823" duration="7178000" />
+      <workItem from="1742977239523" duration="5610000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -262,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739071403264</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Finished post page desktop version">
+      <option name="closed" value="true" />
+      <created>1741409634570</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741409634570</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +295,7 @@
     <MESSAGE value="Lastest post component created" />
     <MESSAGE value="Fetching data from sanity studio" />
     <MESSAGE value="Corrected sanity import problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected sanity import problems" />
+    <MESSAGE value="Finished post page desktop version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished post page desktop version" />
   </component>
 </project>

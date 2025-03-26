@@ -9,7 +9,9 @@ export default function NavBar ({languageLink}) {
     return (
         <div className="w-full mx-auto flex flex-row justify-between border-b border-black items-center py-2 mt-2">
             {/* Blog Title */}
-            <h3>IL BLOG DI SMU</h3>
+            <Link href={language === "it" ? "/it" : "/en"}>
+                <h3>IL BLOG DI SMU</h3>
+            </Link>
 
             {/* Navigation Items */}
             <div className="flex flex-row gap-x-4 items-center">
@@ -21,7 +23,7 @@ export default function NavBar ({languageLink}) {
                         onClick={() => handleChange(languageLink)}
                         className="hover:underline focus:outline-none"
                     >
-                        <h4 className={'my-0'}>{language === "it" ? "ENG" : "ITA"}</h4>
+                        <h4 className={"my-0"}>{language === "it" ? "ENG" : "ITA"}</h4>
                     </button>
                 </div>
             </div>

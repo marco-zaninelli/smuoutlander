@@ -1,42 +1,47 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import sanityClient from "@/lib/sanityClient";
+import PostComponent from "@/components/PostComponent";
+import {fetchPostData} from "@/lib/fetchPostData";
 
-const PostEN = () => {
-    const router = useRouter();
-    const { slug } = router.query;
-    const [post, setPost] = useState(null);
-
-    useEffect(() => {
-        if (slug) {
-            sanityClient
-                .fetch(
-                    `*[_type == "post" && slug.en.current == $slug][0] {
-                        title, 
-                        description, 
-                        mainImage, 
-                        publishedAt, 
-                        location, 
-                        body, 
-                        quote, 
-                        images
-                    }`,
-                    { slug }
-                )
-                .then((data) => setPost(data))
-                .catch(console.error);
-        }
-    }, [slug]);
-
+const PostEN = ({post}) => {
     if (!post) return <p>Loading...</p>;
 
+    console.log("lang: ", post.slug.it.current);
+
     return (
-        <div>
-            <h1>{post.title.en}</h1>
-            <p>{post.description.en}</p>
-            {/* Render other post details here */}
-        </div>
+        <PostComponent
+            language={"en"}
+            post={post}
+        />
     );
 };
 
 export default PostEN;
+
+
+export async function getStaticProps ({params}) {
+    const {post} = await fetchPostData(sanityClient, params.slug, "en");
+
+    if (!post) {
+        return {notFound: true};
+    }
+
+    return {
+        props: {
+            post
+        }
+    };
+}
+
+export async function getStaticPaths () {
+    const query = `*[_type == "post"]{ "slug": slug.en.current }`;
+    const posts = await sanityClient.fetch(query);
+
+    const paths = posts.map((post) => ({
+        params: {slug: post.slug}
+    }));
+
+    return {
+        paths,
+        fallback: "blocking"
+    };
+}

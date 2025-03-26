@@ -27,10 +27,10 @@ export const LanguageProvider = ({ children }) => {
     function handleChange(url) {
         if (language === 'it') {
             setLanguage('en');
-            router.push(url);
+            router.push(`/en/${url}`);
         } else {
             setLanguage('it');
-            router.push(url);
+            router.push(`/it/${url}`);
         }
     }
 

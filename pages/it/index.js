@@ -7,7 +7,7 @@ import sanityClient from "@/lib/sanityClient";
 import {urlFor} from "@/lib/imageBuilder";
 
 export default function HomeIt ({posts}) {
-    const languageLink = "/en";
+    const languageLink = "";
     const latestPost = posts[0];
     const otherPosts = posts.slice(1);
 
