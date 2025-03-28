@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
 
-export default function HomeEn() {
+export default function HomeEn () {
     const languageLink = "";
 
     return (
@@ -9,7 +9,7 @@ export default function HomeEn() {
             <Head>
                 <title>ENG</title>
             </Head>
-            <Layout languageLink={languageLink} />
+            <Layout languageLink={languageLink} language={"en"} />
             <main>
                 <h1>English Site</h1>
             </main>

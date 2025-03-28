@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Finished post page desktop version">
-      <change afterPath="$PROJECT_DIR$/components/PostComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fetchPostData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Stefano-Brucato.png" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added footer and latest posts to blog post">
+      <change afterPath="$PROJECT_DIR$/lib/fetchLatest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LastPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/context/LanguageContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/context/LanguageContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/en/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/it/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sanityClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sanityClient.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +43,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -154,7 +146,7 @@
       <workItem from="1739863297867" duration="11104000" />
       <workItem from="1741333657185" duration="19282000" />
       <workItem from="1742202220823" duration="7178000" />
-      <workItem from="1742977239523" duration="5610000" />
+      <workItem from="1742977239523" duration="22089000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -268,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741409634570</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Corrected and reorganized code">
+      <option name="closed" value="true" />
+      <created>1742983897157</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742983897157</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added footer and latest posts to blog post">
+      <option name="closed" value="true" />
+      <created>1743164474114</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743164474114</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +304,8 @@
     <MESSAGE value="Fetching data from sanity studio" />
     <MESSAGE value="Corrected sanity import problems" />
     <MESSAGE value="Finished post page desktop version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished post page desktop version" />
+    <MESSAGE value="Corrected and reorganized code" />
+    <MESSAGE value="Added footer and latest posts to blog post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added footer and latest posts to blog post" />
   </component>
 </project>

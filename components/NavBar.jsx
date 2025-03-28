@@ -7,7 +7,7 @@ export default function NavBar ({languageLink}) {
     const {language, handleChange} = useLanguage();
 
     return (
-        <div className="w-full mx-auto flex flex-row justify-between border-b border-black items-center py-2 mt-2">
+        <header className="w-full mx-auto flex flex-row justify-between border-b border-black items-center py-2 mt-2 px-4">
             {/* Blog Title */}
             <Link href={language === "it" ? "/it" : "/en"}>
                 <h3>IL BLOG DI SMU</h3>
@@ -27,6 +27,6 @@ export default function NavBar ({languageLink}) {
                     </button>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }

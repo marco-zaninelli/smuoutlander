@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import Image from "next/image";
-import { urlFor } from "@/lib/imageBuilder";
+import {urlFor} from "@/lib/imageBuilder";
 
-const ImageGrid = ({ images }) => {
+const ImageGrid = ({images}) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState("");
 
@@ -46,7 +46,7 @@ const ImageGrid = ({ images }) => {
                             alt={`Image ${index}`}
                             width={500}
                             height={500}
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="absolute inset-0 w-full h-full object-cover scale-105 hover:scale-100 transition-all duration-500"
                         />
                     </div>
                 ))}
@@ -54,17 +54,19 @@ const ImageGrid = ({ images }) => {
 
             {/* Modal for Fullscreen Image */}
             {isModalOpen && (
-                <div
-                    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
-                    onClick={handleCloseModal}
-                >
-                    <Image
-                        src={urlFor(selectedImage).url()}
-                        width={1500}
-                        height={800}
-                        alt="Fullscreen"
-                        className="max-w-full max-h-full object-contain"
-                    />
+                <div className={`${isModalOpen ? "opacity-100" : "opacity-0"} transition-all duration-500`}>
+                    <div
+                        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 cursor-pointer p-4"
+                        onClick={handleCloseModal}
+                    >
+                        <Image
+                            src={urlFor(selectedImage).url()}
+                            width={1500}
+                            height={800}
+                            alt="Fullscreen"
+                            className="max-w-full max-h-full object-contain"
+                        />
+                    </div>
                 </div>
             )}
         </div>
