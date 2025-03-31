@@ -2,6 +2,7 @@ import sanityClient from "@/lib/sanityClient";
 import PostComponent from "@/components/PostComponent";
 import {fetchPostData} from "@/lib/fetchPostData";
 import {urlFor} from "@/lib/imageBuilder";
+import {fetchLatest} from "@/lib/fetchLatest";
 
 const PostEN = ({post, latest}) => {
     if (!post) return <p>Loading...</p>;
@@ -18,38 +19,22 @@ const PostEN = ({post, latest}) => {
 export default PostEN;
 
 
-export async function getStaticProps({ params }) {
-    const { post } = await fetchPostData(sanityClient, params.slug, "en");
+export async function getStaticProps ({params}) {
+    const {post} = await fetchPostData(params.slug, "en");
+    const {latest} = await fetchLatest(params.slug, "en");
 
     if (!post) {
-        return { notFound: true };
+        return {notFound: true};
     }
 
-    // Fetch the latest 3 posts excluding the current one
-    const latestQuery = `
-        *[_type == "post" && slug.en.current != $slug] 
-        | order(publishedAt desc)[0...3] {
-            title { it, en },
-            slug { it, en },
-            description { it, en },
-            location { it, en },
-            mainImage,
-            publishedAt
-        }
-    `;
-
-    const latestPosts = await sanityClient.fetch(latestQuery, { slug: params.slug });
-
-    // Format images
-    const formattedLatest = latestPosts.map(post => ({
-        ...post,
-        image: post.mainImage ? urlFor(post.mainImage).width(500).url() : null
-    }));
+    if (!latest) {
+        return {notFound: true};
+    }
 
     return {
         props: {
             post,
-            latest: formattedLatest
+            latest
         }
     };
 }

@@ -20,7 +20,7 @@ const PostComponent = ({post, language, latest}) => {
             <meta name="robots" content="index, follow" />
 
             {/* Canonical URL */}
-            <link rel="canonical" href={`https://www.smuoverlander.it/it/${isEnglish ? post.slug.en.current : post.slug.it.current}`} />
+            <link rel="canonical" href={`https://www.smuoverlander.it/${isEnglish ? "en/" + post.slug.en.current : "it/" + post.slug.it.current}`} />
 
             {/* Open Graph (Facebook, LinkedIn) */}
             <meta property="og:type" content="website" />
@@ -39,11 +39,11 @@ const PostComponent = ({post, language, latest}) => {
         {/* Content */}
         <main>
             <Layout languageLink={isEnglish ? post.slug.it.current : post.slug.en.current} language={language}>
-                <div className={'max-w-screen-xl mx-auto'}>
+                <div className={"max-w-screen-xl mx-auto"}>
                     {/* Title and description */}
-                    <div className="flex flex-col items-start sm:flex-row sm:gap-y-16 my-6 sm:my-10 sm:items-center">
-                        <h2 className="w-full sm:w-1/2 uppercase mb-2 sm:mb-0">{isEnglish ? post.title.en : post.title.it}</h2>
-                        <p className="w-full sm:w-1/2">{isEnglish ? post.description.en : post.description.it}</p>
+                    <div className="flex flex-col items-start sm:flex-row sm:gap-y-16 my-6 sm:my-10 sm:items-center gap-x-4">
+                        <h2 className="w-full sm:w-1/2 xl:w-3/5 uppercase mb-2 sm:mb-0 leading-snug">{isEnglish ? post.title.en : post.title.it}</h2>
+                        <p className="w-full sm:w-1/2 xl:w-2/5">{isEnglish ? post.description.en : post.description.it}</p>
                     </div>
 
                     {/* Main image */}
@@ -97,13 +97,13 @@ const PostComponent = ({post, language, latest}) => {
                 </div>
 
                 {/* Images */}
-                <div className={'max-w-screen-2xl mx-auto'}>
+                <div className={"max-w-screen-2xl mx-auto"}>
                     <ImageGrid images={post.images} />
                 </div>
 
                 {/* Latest posts */}
-                <div className={'mt-12 md:mt-24 xl:mt-24 border-t border-black max-w-screen-xl mx-auto'}>
-                    <h2 className={'uppercase mb-2 md:mb-4 xl:mb-6'}>{isEnglish ? "Latest Posts" : "Ultimi Articoli"}</h2>
+                <div className={"mt-12 md:mt-24 xl:mt-24 border-t border-black max-w-screen-xl mx-auto"}>
+                    <h2 className={"uppercase mb-2 md:mb-4 xl:mb-6"}>{isEnglish ? "Latest Posts" : "Ultimi Articoli"}</h2>
                     <div className={"mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
                         {latest.map((latestPost, index) => (
                             <Post
@@ -113,7 +113,7 @@ const PostComponent = ({post, language, latest}) => {
                                 location={isEnglish ? latestPost.location.en : latestPost.location.it}
                                 image={latestPost.image}
                                 description={isEnglish ? latestPost.description.en : latestPost.description.it}
-                                link={isEnglish ? `en/${latestPost.slug.en.current}` : `it/${latestPost.slug.it.current}`}
+                                link={isEnglish ? latestPost.slug.en.current : latestPost.slug.it.current}
                             />
                         ))}
                     </div>

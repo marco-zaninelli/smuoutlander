@@ -1,18 +1,22 @@
-import Head from "next/head";
-import Layout from "@/components/Layout";
+import HomeComponent from "@/components/HomeComponent";
+import {fetchLatest} from "@/lib/fetchLatest";
 
-export default function HomeEn () {
-    const languageLink = "";
-
+export default function HomeEn ({posts}) {
     return (
-        <>
-            <Head>
-                <title>ENG</title>
-            </Head>
-            <Layout languageLink={languageLink} language={"en"} />
-            <main>
-                <h1>English Site</h1>
-            </main>
-        </>
+        <HomeComponent language={"en"} posts={posts} />
     );
+}
+
+export async function getStaticProps () {
+    const {latest} = await fetchLatest(null, "en");
+
+    if (!latest) {
+        return {notFound: true};
+    }
+
+    return {
+        props: {
+            posts: latest
+        }
+    };
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Post ({image, title, date, location, description, link}) {
     return (
         <Link href={link}>
-            <div className={"border border-black p-4 flex flex-col justify-between"}>
+            <div className={"border border-black p-4 flex flex-col justify-between h-full"}>
                 <div>
                     <div className={"flex flex-row justify-between m-0"}>
                         <p className={'-mt-2 mb-1'}>{date}</p>
