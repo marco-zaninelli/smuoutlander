@@ -26,6 +26,7 @@ export default function HomeIt ({posts}) {
                             location={latestPost.location.it}
                             image={latestPost.image}
                             description={latestPost.description.it}
+                            link={"it/" + latestPost.slug.it.current}
                         />
                         <div className={"mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
                             {otherPosts.map((post, index) => (
@@ -66,12 +67,17 @@ export async function getStaticProps () {
 
         const formattedPosts = posts.map(post => ({
             ...post,
-            image: post.mainImage ? urlFor(post.mainImage).width(500).url() : null
+            image: post.mainImage ? urlFor(post.mainImage).width(500).url() : null,
+            publishedAt: post.publishedAt
+                ? new Intl.DateTimeFormat('it-IT', { month: 'long', year: 'numeric' })
+                    .format(new Date(post.publishedAt))
+                    .replace(/^./, str => str.toUpperCase())
+                : null
         }));
 
         return {
             props: {
-                posts: formattedPosts
+                posts: formattedPosts,
             },
             revalidate: 60
         };

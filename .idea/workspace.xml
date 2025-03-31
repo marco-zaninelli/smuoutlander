@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added footer and latest posts to blog post">
-      <change afterPath="$PROJECT_DIR$/lib/fetchLatest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LastPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/imageBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/imageBuilder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/sanityClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sanityClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,11 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -40,6 +48,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/marco-zaninelli/smuoutlander.git&quot;,
     &quot;accountId&quot;: &quot;3a87e6ee-03e0-4ed7-8880-d7e3c6d6aac4&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;marco-zaninelli&quot;,
+    &quot;repository&quot;: &quot;smuoutlander&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -63,7 +81,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/GAMiNG-LAPTOP/WebstormProjects/smuoutlander&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -146,7 +164,8 @@
       <workItem from="1739863297867" duration="11104000" />
       <workItem from="1741333657185" duration="19282000" />
       <workItem from="1742202220823" duration="7178000" />
-      <workItem from="1742977239523" duration="22089000" />
+      <workItem from="1742977239523" duration="23307000" />
+      <workItem from="1743407842721" duration="1056000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -276,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743164474114</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added footer and latest posts to blog post">
+      <option name="closed" value="true" />
+      <created>1743406610315</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743406610315</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +332,7 @@
     <MESSAGE value="Corrected sanity import problems" />
     <MESSAGE value="Finished post page desktop version" />
     <MESSAGE value="Corrected and reorganized code" />
+    <MESSAGE value="Deploy test" />
     <MESSAGE value="Added footer and latest posts to blog post" />
     <option name="LAST_COMMIT_MESSAGE" value="Added footer and latest posts to blog post" />
   </component>
