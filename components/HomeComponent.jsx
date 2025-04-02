@@ -54,7 +54,7 @@ export default function HomeComponent ({posts, language}) {
                             location={isEnglish ? lastPost.location.en : lastPost.location.it}
                             image={lastPost.image}
                             description={isEnglish ? lastPost.description.en : lastPost.description.it}
-                            link={language + "/" + isEnglish ? lastPost.slug.en.current : lastPost.slug.it.current}
+                            link={isEnglish ? language + "/" + lastPost.slug.en.current : language + "/" + lastPost.slug.it.current}
                         />
                         <div className={"mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"}>
                             {otherPosts.map((post, index) => (
@@ -65,7 +65,7 @@ export default function HomeComponent ({posts, language}) {
                                     location={isEnglish ? post.location.en : post.location.it}
                                     image={post.image}
                                     description={isEnglish ? post.description.en : post.description.it}
-                                    link={language + "/" + isEnglish ? post.slug.en.current : post.slug.it.current}
+                                    link={isEnglish ? (language + "/" + post.slug.en.current) : (language + "/" + post.slug.it.current)}
                                 />
                             ))}
                         </div>

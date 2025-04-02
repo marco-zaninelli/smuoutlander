@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Vercel Deploy test">
-      <change afterPath="$PROJECT_DIR$/components/HomeComponent.jsx" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Bilingual homepage made and corrected issues with links.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LastPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LastPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fetchLatest.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fetchLatest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fetchPostData.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fetchPostData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/en/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/it/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +163,7 @@
       <workItem from="1741333657185" duration="19282000" />
       <workItem from="1742202220823" duration="7178000" />
       <workItem from="1742977239523" duration="23307000" />
-      <workItem from="1743407842721" duration="7767000" />
+      <workItem from="1743407842721" duration="11166000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -315,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743409070171</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Bilingual homepage made and corrected issues with links.">
+      <option name="closed" value="true" />
+      <created>1743424001528</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1743424001528</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +349,7 @@
     <MESSAGE value="Deploy test" />
     <MESSAGE value="Added footer and latest posts to blog post" />
     <MESSAGE value="Vercel Deploy test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vercel Deploy test" />
+    <MESSAGE value="Bilingual homepage made and corrected issues with links." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bilingual homepage made and corrected issues with links." />
   </component>
 </project>
