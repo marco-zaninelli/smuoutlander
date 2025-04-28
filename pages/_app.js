@@ -1,11 +1,28 @@
-import '../styles/globals.css';
-import Head from "next/head";
-import {LanguageProvider} from "@/context/LanguageContext";
-import {useRouter} from "next/router";
-import {useEffect} from "react";
+import "../styles/globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import LoadingScreen from "@/components/LoadingScreen";
+import { AnimatePresence, motion } from "framer-motion";
 
-function MyApp ({Component, pageProps}) {
+function MyApp({ Component, pageProps }) {
+    const [loading, setLoading] = useState(false);
     const router = useRouter();
+
+    useEffect(() => {
+        const handleStart = () => setLoading(true);
+        const handleComplete = () => setLoading(false);
+
+        router.events.on("routeChangeStart", handleStart);
+        router.events.on("routeChangeComplete", handleComplete);
+        router.events.on("routeChangeError", handleComplete);
+
+        return () => {
+            router.events.off("routeChangeStart", handleStart);
+            router.events.off("routeChangeComplete", handleComplete);
+            router.events.off("routeChangeError", handleComplete);
+        };
+    }, [router]);
 
     useEffect(() => {
         if (router.isReady && (router.pathname === "/" || router.pathname === "/_error")) {
@@ -15,18 +32,20 @@ function MyApp ({Component, pageProps}) {
     }, [router.isReady]);
 
     return (
-        <>
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-                      rel="stylesheet" />
-            </Head>
-            <LanguageProvider>
-                <Component {...pageProps} />
-            </LanguageProvider>
-        </>
+        <LanguageProvider>
+            {/*{loading && <LoadingScreen />}*/}
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={router.route}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <Component {...pageProps} />
+                </motion.div>
+            </AnimatePresence>
+        </LanguageProvider>
     );
 }
 

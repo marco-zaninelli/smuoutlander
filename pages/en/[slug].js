@@ -1,11 +1,10 @@
 import sanityClient from "@/lib/sanityClient";
 import PostComponent from "@/components/PostComponent";
 import {fetchPostData} from "@/lib/fetchPostData";
-import {urlFor} from "@/lib/imageBuilder";
 import {fetchLatest} from "@/lib/fetchLatest";
 
 const PostEN = ({post, latest}) => {
-    if (!post) return <p>Loading...</p>;
+    if (!post) return <div className="loader"></div>;
 
     return (
         <PostComponent
@@ -21,7 +20,7 @@ export default PostEN;
 
 export async function getStaticProps ({params}) {
     const {post} = await fetchPostData(params.slug, "en");
-    const {latest} = await fetchLatest(params.slug, "en");
+    const {latest} = await fetchLatest(params.slug, "en", true);
 
     if (!post) {
         return {notFound: true};

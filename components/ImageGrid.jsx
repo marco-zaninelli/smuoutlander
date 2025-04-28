@@ -1,39 +1,40 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import {urlFor} from "@/lib/imageBuilder";
+import { urlFor } from "@/lib/imageBuilder";
 
-const ImageGrid = ({images}) => {
-    const [isModalOpen, setModalOpen] = useState(false);
-    const [selectedImage, setSelectedImage] = useState("");
+// Component to display a grid of images with a fullscreen modal view
+const ImageGrid = ({ images }) => {
+    const [isModalOpen, setModalOpen] = useState(false); // Tracks modal visibility
+    const [selectedImage, setSelectedImage] = useState(""); // Stores the selected image for fullscreen view
 
-    // Disable scroll when modal is open
+    // Toggle page scroll based on modal state
     useEffect(() => {
         if (isModalOpen) {
-            // Disable scroll
-            document.body.style.overflow = "hidden";
+            document.body.style.overflow = "hidden"; // Disable scroll when modal is open
         } else {
-            // Enable scroll
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "auto"; // Enable scroll when modal is closed
         }
 
-        // Clean up on component unmount
+        // Cleanup: Ensure scroll is enabled if component unmounts
         return () => {
             document.body.style.overflow = "auto";
         };
     }, [isModalOpen]);
 
+    // Handle clicking an image to open it in fullscreen modal
     const handleImageClick = (imageUrl) => {
         setSelectedImage(imageUrl);
         setModalOpen(true);
     };
 
+    // Close the modal
     const handleCloseModal = () => {
         setModalOpen(false);
     };
 
     return (
         <div>
-            {/* Image Grid */}
+            {/* Grid layout for images */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {images.map((image, index) => (
                     <div
@@ -52,7 +53,7 @@ const ImageGrid = ({images}) => {
                 ))}
             </div>
 
-            {/* Modal for Fullscreen Image */}
+            {/* Fullscreen modal when an image is selected */}
             {isModalOpen && (
                 <div className={`${isModalOpen ? "opacity-100" : "opacity-0"} transition-all duration-500`}>
                     <div

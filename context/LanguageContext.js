@@ -1,4 +1,3 @@
-// context/LanguageContext.js
 import { createContext, useState, useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -10,28 +9,29 @@ export const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useState(null);
     const router = useRouter();
 
-    // Get language from path name
+    // Get language from path name or localStorage
     useEffect(() => {
-        const pathname = router.pathname;
-
-        if (pathname.startsWith('/en')) {
-            setLanguage('en');
-        } else if (pathname.startsWith('/')) {
-            setLanguage('it');
+        // Try to get language from localStorage first
+        const storedLanguage = localStorage.getItem('language');
+        if (storedLanguage) {
+            setLanguage(storedLanguage);
         } else {
-            setLanguage('it');
+            const pathname = router.pathname;
+            if (pathname.startsWith('/en')) {
+                setLanguage('en');
+            } else if (pathname.startsWith('/it')) {
+                setLanguage('it');
+            } else {
+                setLanguage('it');
+            }
         }
     }, [router.pathname]);
 
-
     function handleChange(url) {
-        if (language === 'it') {
-            setLanguage('en');
-            router.push(`/en/${url}`);
-        } else {
-            setLanguage('it');
-            router.push(`/it/${url}`);
-        }
+        const newLanguage = language === 'it' ? 'en' : 'it';
+        setLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);  // Persist the selected language
+        router.push(`/${newLanguage}/${url}`);
     }
 
     return (
