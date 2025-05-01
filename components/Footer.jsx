@@ -38,10 +38,8 @@ export default function Footer({ language }) {
                                 <h3 className={"border-b border-white mb-2"}>
                                     {isEnglish ? "LEGAL" : "LEGALE"}
                                 </h3>
-                                {/* TODO: Replace "#" with actual Privacy Policy link */}
-                                <FooterLink link={"#"}>Privacy Policy</FooterLink>
-                                {/* TODO: Replace "#" with actual Cookie Policy link */}
-                                <FooterLink link={"#"}>Cookie Policy</FooterLink>
+                                <FooterLink link={isEnglish ? "/en/privacy" : "/it/privacy"}>Privacy Policy</FooterLink>
+                                <FooterLink link={isEnglish ? "/en/cookie" : "/it/cookie"}>Cookie Policy</FooterLink>
                             </div>
                         </div>
                     </div>
