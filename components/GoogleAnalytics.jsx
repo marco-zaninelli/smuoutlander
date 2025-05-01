@@ -10,10 +10,9 @@ export default function GoogleAnalytics() {
         <>
             <Script
                 strategy="afterInteractive"
-                src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}`}
             />
             <Script id="ga-init" strategy="afterInteractive">
-                {/*TODO:: configure google analytics*/}
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}

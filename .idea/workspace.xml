@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Started location banner and added comments throught the code">
-      <change afterPath="$PROJECT_DIR$/components/CookieBanner.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/en/cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/en/privacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/it/cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/it/privacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/location-image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LocationBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LocationBanner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added Cookie and Privacy policies">
+      <change beforePath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +163,7 @@
       <workItem from="1743407842721" duration="16761000" />
       <workItem from="1744706826709" duration="9411000" />
       <workItem from="1745658510341" duration="3602000" />
-      <workItem from="1745664234655" duration="8016000" />
+      <workItem from="1745664234655" duration="8655000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -346,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745834470760</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added Cookie and Privacy policies">
+      <option name="closed" value="true" />
+      <created>1746093685027</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746093685027</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +376,7 @@
     <MESSAGE value="Bilingual homepage made and corrected issues with links." />
     <MESSAGE value="Link corrections" />
     <MESSAGE value="Started location banner and added comments throught the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started location banner and added comments throught the code" />
+    <MESSAGE value="Added Cookie and Privacy policies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Cookie and Privacy policies" />
   </component>
 </project>
