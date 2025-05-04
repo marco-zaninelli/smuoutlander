@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Finished Cookie banner">
-      <change afterPath="$PROJECT_DIR$/next-sitemap.js" afterDir="false" />
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added sitemap creator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-sitemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-sitemap.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +166,7 @@
       <workItem from="1745658510341" duration="3602000" />
       <workItem from="1745664234655" duration="13470000" />
       <workItem from="1746337586166" duration="1948000" />
-      <workItem from="1746340079858" duration="257000" />
+      <workItem from="1746340079858" duration="941000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -370,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746339542972</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added sitemap creator">
+      <option name="closed" value="true" />
+      <created>1746340422515</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1746340422515</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +415,7 @@
     <MESSAGE value="Added Google Analytics" />
     <MESSAGE value="Google Analytics correction" />
     <MESSAGE value="Finished Cookie banner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Cookie banner" />
+    <MESSAGE value="Added sitemap creator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sitemap creator" />
   </component>
 </project>
