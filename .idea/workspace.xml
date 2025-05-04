@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added Google Analytics">
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Google Analytics correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CookieBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CookieBanner.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,24 +70,24 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "development",
-    "last_opened_file_path": "C:/Users/GAMiNG-LAPTOP/WebstormProjects/smuoutlander/pages/en",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.studio.executor": "Run",
-    "ts.external.directory.path": "C:\\Users\\GAMiNG-LAPTOP\\WebstormProjects\\smuoutlander\\studio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GAMiNG-LAPTOP/WebstormProjects/smuoutlander/pages/en&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.studio.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\GAMiNG-LAPTOP\\WebstormProjects\\smuoutlander\\studio\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -164,7 +164,8 @@
       <workItem from="1743407842721" duration="16761000" />
       <workItem from="1744706826709" duration="9411000" />
       <workItem from="1745658510341" duration="3602000" />
-      <workItem from="1745664234655" duration="11038000" />
+      <workItem from="1745664234655" duration="13470000" />
+      <workItem from="1746337586166" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -350,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746094246711</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Google Analytics correction">
+      <option name="closed" value="true" />
+      <created>1746333136716</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746333136716</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +396,7 @@
     <MESSAGE value="Started location banner and added comments throught the code" />
     <MESSAGE value="Added Cookie and Privacy policies" />
     <MESSAGE value="Added Google Analytics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Google Analytics" />
+    <MESSAGE value="Google Analytics correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Google Analytics correction" />
   </component>
 </project>
