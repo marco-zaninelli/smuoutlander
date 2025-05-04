@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Correction sitemap">
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Correction sitemap and cookie banner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CookieBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CookieBanner.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-sitemap.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-sitemap.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +167,7 @@
       <workItem from="1745658510341" duration="3602000" />
       <workItem from="1745664234655" duration="13470000" />
       <workItem from="1746337586166" duration="1948000" />
-      <workItem from="1746340079858" duration="1308000" />
+      <workItem from="1746340079858" duration="1905000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -384,7 +385,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746341079219</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Correction sitemap">
+      <option name="closed" value="true" />
+      <created>1746341417969</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1746341417969</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +434,7 @@
     <MESSAGE value="Finished Cookie banner" />
     <MESSAGE value="Added sitemap creator" />
     <MESSAGE value="Correction sitemap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction sitemap" />
+    <MESSAGE value="Correction sitemap and cookie banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction sitemap and cookie banner" />
   </component>
 </project>

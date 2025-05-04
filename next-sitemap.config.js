@@ -13,7 +13,7 @@ async function getSanityPages() {
     return pages.map(page => `https://www.smuoverlander.it/${page.slug}`);
 }
 
-module.exports = {
+const sitemapConfig = {
     siteUrl: 'https://www.smuoverlander.it',
     generateRobotsTxt: true,
     sitemapSize: 7000,
@@ -34,3 +34,5 @@ module.exports = {
         }));
     },
 };
+
+export default sitemapConfig;

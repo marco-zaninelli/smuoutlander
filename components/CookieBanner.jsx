@@ -1,8 +1,8 @@
 import CookieConsent from "react-cookie-consent";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import {useRouter} from "next/router";
+import {useEffect, useState} from "react";
 
-export default function CookieBanner() {
+export default function CookieBanner () {
     const router = useRouter();
     const isEnglish = router.pathname.startsWith("/en");
     const [showBanner, setShowBanner] = useState(true);
@@ -41,10 +41,11 @@ export default function CookieBanner() {
                         padding: "1rem",
                         color: "#fff",
                         fontSize: "14px",
-                        lineHeight: "1.6",
+                        lineHeight: "1.6"
                     }}
-                    contentStyle={{ flex: "1 1 100%", marginBottom: "1.5rem" }}
+                    contentStyle={{flex: "1 1 100%", marginBottom: "1.5rem"}}
                     expires={150}
+                    buttonText=""
                 >
                     {isEnglish ? (
                         <>
@@ -55,7 +56,8 @@ export default function CookieBanner() {
                         </>
                     ) : (
                         <>
-                            Utilizziamo cookie per raccogliere dati anonimi (Google Analytics). Cliccando “Accetta” autorizzi il trattamento secondo la nostra{" "}
+                            Utilizziamo cookie per raccogliere dati anonimi (Google Analytics). Cliccando “Accetta” autorizzi il trattamento secondo la
+                            nostra{" "}
                             <a href="/it/cookie" className="underline text-white hover:text-gray-300">
                                 Cookie Policy
                             </a>.
