@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added Cookie and Privacy policies">
+    <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Added Google Analytics">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GoogleAnalytics.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +164,7 @@
       <workItem from="1743407842721" duration="16761000" />
       <workItem from="1744706826709" duration="9411000" />
       <workItem from="1745658510341" duration="3602000" />
-      <workItem from="1745664234655" duration="8655000" />
+      <workItem from="1745664234655" duration="11038000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -341,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746093685027</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added Google Analytics">
+      <option name="closed" value="true" />
+      <created>1746094246710</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746094246711</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +386,7 @@
     <MESSAGE value="Link corrections" />
     <MESSAGE value="Started location banner and added comments throught the code" />
     <MESSAGE value="Added Cookie and Privacy policies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Cookie and Privacy policies" />
+    <MESSAGE value="Added Google Analytics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Google Analytics" />
   </component>
 </project>
