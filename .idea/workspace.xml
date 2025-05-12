@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="13ded0e2-4d89-49b6-bc27-7bb53ffb533e" name="Changes" comment="Correction sitemap and cookie banner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CookieBanner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CookieBanner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-sitemap.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-sitemap.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/en/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/en/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/en/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/it/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/it/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/it/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +171,8 @@
       <workItem from="1745658510341" duration="3602000" />
       <workItem from="1745664234655" duration="13470000" />
       <workItem from="1746337586166" duration="1948000" />
-      <workItem from="1746340079858" duration="1905000" />
+      <workItem from="1746340079858" duration="2446000" />
+      <workItem from="1747045333223" duration="1262000" />
     </task>
     <task id="LOCAL-00001" summary="First push">
       <option name="closed" value="true" />
@@ -393,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746341417969</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Correction sitemap and cookie banner">
+      <option name="closed" value="true" />
+      <created>1746342015477</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1746342015477</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
